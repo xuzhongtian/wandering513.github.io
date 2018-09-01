@@ -14,13 +14,12 @@ permalink: /:year/:month/:title/
 highlighter: rouge
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-cover_color: red
+cover_color: blue
 
 # The blog button should not be removed.
 blog_button:
     title: Blog
     description: Visit blog
-    url: https://wandering513.github.io
 
 # Navigation buttons in the front page.
 nav:
