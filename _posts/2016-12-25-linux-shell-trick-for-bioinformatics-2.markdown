@@ -28,30 +28,38 @@ awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
 2)  有时候，比如说我们需要做一个clustalw，我们需要将多行的fasta文件(multiple line fasta)格式文件，转换成单行的fasta文件(single line fasta)序列文件，怎么办呢。 巧用awk + printf一行搞定。
 
 
-{% highlight python %}
+{% highlight bash %}
 awk '/^>/ { print n $0;}  !/^>/ {printf "%s", $0, n="\n"}  END {print ""}'  test.fa
 {% endhighlight %}
 
 
 
 
-3. 在做GO注释的时候，我们一定会用到go2geneid.txt这个文件。以拟南芥为例，它的go2geneid.txt文件如下。
+3) 在做GO注释的时候，我们一定会用到go2geneid.txt这个文件。以拟南芥为例，它的go2geneid.txt文件如下。
 
 go2geneID.txt文件中，GO号和gene之间是tab分开，gene之间是以逗号分开的。
 
+|              |                                                  |
+| ------------ | -------------------------------------------------|
+| GO:0045230   | AT4G26910,AT5G55070                              |
+| GO:0010282   | AT5G45890                                        |
+| GO:0010494   | AT1G70070                                        |
+| GO:0034702   | AT2G24240,AT3G09030,AT4G30940,AT5G41330,AT5G55000|
 
 现在我们很好奇那个GO号拥有的基因数目最多，写脚本吗？NO，shell一行搞定。
 
-
-```
-```
-
-
-
-4. 如何统计文件的行数。大家心想，还用说吗？ `wc -l`不就好了。但是当这个问题交给awk时，awk的解法是。 
+{% highlight bash %}
+awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
+{% endhighlight %}
 
 
-```
+
+
+
+4) 如何统计文件的行数。大家心想，还用说吗？ `wc -l`不就好了。但是当这个问题交给awk时，awk的解法是。 
+
+
+```bash
 awk 'END {print NR}' file.txt 
 ```
 
@@ -60,46 +68,45 @@ awk 'END {print NR}' file.txt
 
 
 
-5. 当我们想要提取文件的某列时。
+5)  当我们想要提取文件的某列时。
 
 
-```
+```bash
 cut -f 7 file.txt > out.txt
 ```
 
 
 
-当然交给万能的awk，则会这么写。
+当然交给万能的awk，则会这么写:
 
-
-```
-```
-
+{% highlight bash %}
+awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
+{% endhighlight %}
 
 这种时候就要读者自己去权衡了，因为自己习惯并欣赏awk，所以个人反而更喜欢后一种写法。
 
 
 
-6.  将GFF里面第三列不是chromosome的行给取出来。
+6)  将GFF里面第三列不是chromosome的行给取出来。
+
+{% highlight bash %}
+awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
+{% endhighlight %}
 
 
-```
-```
+7)  删除文件里所有的空行
 
 
 
-7.  删除文件里所有的空行
-
-
-```
+```bash
 sed 's/^$/d' file
 ```
 
 
-8. 有时候我们不想看到header，直接用文件本身的内容去进行下一步操作，我们需要将header去掉。
+8)  有时候我们不想看到header，直接用文件本身的内容去进行下一步操作，我们需要将header去掉。
 
 
-```
+```bash
 sed '1d'  file.txt
 ```
 
@@ -110,18 +117,18 @@ sed '1d'  file.txt
 
 
 
-9.  有时候我们可能会需要使用awk为每一行行头添加字符串。
+9)  有时候我们可能会需要使用awk为每一行行头添加字符串。
 
 
-```
+```bash
 awk '{print "gene_ID " $0}' file.txt
 ```
 
 
-10. 统计fastq文件里面的reads数目。
+10) 统计fastq文件里面的reads数目。
 
 
-```
+```bash
 grep  -c "^@"  test.fastq
 ```
 
@@ -133,7 +140,7 @@ grep  -c "^@"  test.fastq
 因此应该是用下面的方法。
 
 
-```
+```bash
 cat test.fastq | echo $((`wc -l`/4)) 
 ```
 
