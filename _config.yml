@@ -22,8 +22,8 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-        - {title: Projects, description: My Projects, url: 'http://project.onevcat.com' : Publication, url: 'www.baidu.com'}
-    # - {title: Another Button, description: A button, url: 'http://example.com'}
+        - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+        - {title: publication, description: My publication, url: 'http://baidu.com'}
 
 # Pagination
 gems: [jekyll-paginate]
