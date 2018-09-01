@@ -1,8 +1,8 @@
 # Basic
-title: Vno Jekyll
-subtitle: A blog-orientation theme for Jekyll
+title: 徐钟天的个人博客
+subtitle: 天地本无心
 welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: Vno Jekyll is a port of my Ghost theme vno.
+description: 凡是过去 皆为序章
 creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://vno.onevcat.com"
@@ -24,6 +24,7 @@ blog_button:
 nav:
         - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
         - {title: publication, description: My publication, url: 'http://baidu.com'}
+        - {title: resume, description: My resume, url: 'http://baidu.com'}
 
 # Pagination
 gems: [jekyll-paginate]
