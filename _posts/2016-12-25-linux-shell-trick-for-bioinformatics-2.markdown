@@ -7,11 +7,11 @@ date: 2016-12-25 15:32:24.000000000 +09:00
 上一次写了一个《Linux tricks for bioinformatics系列文章之一》，有读者从后台给我留言指出了一些欠缺的地方，非常感谢这些认真的读者。如果读者想熟悉这些命令，建议将命令手动操作一遍，从管道符的左边到右边依次输入，观察输出，细细体会每一个操作的作用。只有灵活运用这些招式，才能打出一套漂亮的组合拳。
 
 
-1. 将fastq格式文件转化为fasta序列文件。在上个礼拜我提供了一种解法，但是后来有小伙伴在后台私信我，在使用的过程当中遇到了一些问题。因为fasta文件的质量行，也有可能是以@开头。当碰到这样的情况的时候，下面的方法就会带来问题。在深表歉意的同时，贡献了另外一种解法。
+1) 将fastq格式文件转化为fasta序列文件。在上个礼拜我提供了一种解法，但是后来有小伙伴在后台私信我，在使用的过程当中遇到了一些问题。因为fasta文件的质量行，也有可能是以@开头。当碰到这样的情况的时候，下面的方法就会带来问题。在深表歉意的同时，贡献了另外一种解法。
 
 原先的解法：
 
-```
+```bash 
 sed '/^@/!d;s//>/;N' your.fastq> your.fasta 
 ```
 
@@ -19,12 +19,12 @@ sed '/^@/!d;s//>/;N' your.fastq> your.fasta
 新解法：
 
 
-{% highlight python %}
+{% highlight bash %}
 awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
 {% endhighlight %}
 
 
-2. 有时候，比如说我们需要做一个clustalw，我们需要将多行的fasta文件(multiple line fasta)格式文件，转换成单行的fasta文件(single line fasta)序列文件，怎么办呢。 巧用awk + printf一行搞定。
+2)  有时候，比如说我们需要做一个clustalw，我们需要将多行的fasta文件(multiple line fasta)格式文件，转换成单行的fasta文件(single line fasta)序列文件，怎么办呢。 巧用awk + printf一行搞定。
 
 
 {% highlight python %}
