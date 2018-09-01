@@ -21,7 +21,6 @@ sed '/^@/!d;s//>/;N' your.fastq> your.fasta
 
 
 ```
-awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
 ```
 
 
@@ -30,7 +29,6 @@ awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
 
 
 ```
-awk '/^>/ { print n $0;}  !/^>/ {printf "%s", $0, n="\n"}  END {print ""}'  test.fa
 ```
 
 
@@ -46,7 +44,6 @@ go2geneID.txt文件中，GO号和gene之间是tab分开，gene之间是以逗号
 
 
 ```
-# awk '{{split($0,arrary,",");split($0,table,"\t");}{print table[1],length(arrary)}}'  go2geneid.txt | sort -nr -k 2 | head
 ```
 
 
@@ -76,7 +73,6 @@ cut -f 7 file.txt > out.txt
 
 
 ```
-awk -F '\t' '{print $7}'  file.txt > out.txt  
 ```
 
 
@@ -88,7 +84,6 @@ awk -F '\t' '{print $7}'  file.txt > out.txt
 
 
 ```
-# awk '{if ($3 != "chromosome") print $0}'  TAIR10.gff
 ```
 
 
