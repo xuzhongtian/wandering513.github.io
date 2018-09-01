@@ -20,6 +20,7 @@ cover_color: red
 blog_button:
     title: Blog
     description: Visit blog
+    url: https://wandering513.github.io
 
 # Navigation buttons in the front page.
 nav:
