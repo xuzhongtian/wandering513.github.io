@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Shell tricks for bioinformatics 2
+tag: shell trick bioinformatics
 date: 2016-12-25 15:32:24.000000000 +09:00
 ---
 
