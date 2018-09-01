@@ -3,7 +3,7 @@ title: 徐钟天的个人博客
 subtitle: 天地本无心
 #welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
 welcome_message: 不想当厨子的生物学家不是好黑客
-description: 凡是过去 皆为序章
+description: 凡是过往 皆为序章
 creator: <a href="http://onev.cat">@onevcat</a>
 
 url: "http://vno.onevcat.com"
@@ -27,7 +27,7 @@ nav:
         #- {title: publication, description: My publication, url: 'http://baidu.com'}
         - {title: Archive, description: select paper by time, url: 'http://baidu.com'}
         - {title: Tag, description: select paper by Tag, url: 'http://baidu.com'}
-        - {title: resume, description: My resume, url: 'http://baidu.com'}
+        - {title: Resume, description: My resume, url: 'http://baidu.com'}
 
 # Pagination
 gems: [jekyll-paginate]
