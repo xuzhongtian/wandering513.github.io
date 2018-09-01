@@ -33,8 +33,6 @@ awk '/^>/ { print n $0;}  !/^>/ {printf "%s", $0, n="\n"}  END {print ""}'  test
 {% endhighlight %}
 
 
-
-
 3) 在做GO注释的时候，我们一定会用到go2geneid.txt这个文件。以拟南芥为例，它的go2geneid.txt文件如下。
 
 go2geneID.txt文件中，GO号和gene之间是tab分开，gene之间是以逗号分开的。
@@ -53,7 +51,13 @@ awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
 {% endhighlight %}
 
 
+|              |                                                 |
+| ------------ | ---------------------------------------------------|
+| GO:0005575   | 26769           |
+| GO:0008150   | 25831           |
+| GO:0003674   | 25398           |
 
+所以我们知道拥有基因数目最多的GO的的名称为GO:0005575，仅仅这一个条目居然有26769个基因，查了一下含义，是表示**cell component**，这也就不足为奇了。
 
 
 4) 如何统计文件的行数。大家心想，还用说吗？ `wc -l`不就好了。但是当这个问题交给awk时，awk的解法是。 
@@ -75,12 +79,10 @@ awk 'END {print NR}' file.txt
 cut -f 7 file.txt > out.txt
 ```
 
-
-
 当然交给万能的awk，则会这么写:
 
 {% highlight bash %}
-awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
+awk -F '\t' '{print $7}'  file.txt > out.txt  
 {% endhighlight %}
 
 这种时候就要读者自己去权衡了，因为自己习惯并欣赏awk，所以个人反而更喜欢后一种写法。
@@ -90,7 +92,7 @@ awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
 6)  将GFF里面第三列不是chromosome的行给取出来。
 
 {% highlight bash %}
-awk '{if(NR%4==1||NR%4==2){print $0}}'  test.fq | sed 's/^@/>/g' |less
+awk '{if ($3 != "chromosome") print $0}'  TAIR10.gff
 {% endhighlight %}
 
 
@@ -148,6 +150,6 @@ cat test.fastq | echo $((`wc -l`/4))
 
 
 
-为了方便使用电脑的读者，本文也同步发表在知乎专栏。有兴趣的可以移步知乎
+为了方便使用电脑的读者，本文也同步发表在知乎专栏。有兴趣的可以移步知乎。
 
-知乎链接：  https://zhuanlan.zhihu.com/pybio
+[知乎链接](https://zhuanlan.zhihu.com/pybio)：  https://zhuanlan.zhihu.com/pybio
