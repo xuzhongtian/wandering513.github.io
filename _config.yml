@@ -23,8 +23,10 @@ blog_button:
 
 # Navigation buttons in the front page.
 nav:
-        - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
-        - {title: publication, description: My publication, url: 'http://baidu.com'}
+        #- {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
+        #- {title: publication, description: My publication, url: 'http://baidu.com'}
+        - {title: Archive, description: select paper by time, url: 'http://baidu.com'}
+        - {title: Tag, description: select paper by Tag, url: 'http://baidu.com'}
         - {title: resume, description: My resume, url: 'http://baidu.com'}
 
 # Pagination
