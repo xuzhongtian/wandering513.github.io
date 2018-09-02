@@ -5,7 +5,6 @@ subtitle: 天地本无心
 welcome_message: 不想当厨子的生物学家不是好黑客
 description: 凡是过往 皆为序章
 creator: <a href="wandering513.github.io">@徐钟天</a>
-#creator: @徐钟天
 
 url: "http://vno.onevcat.com"
 
@@ -42,6 +41,7 @@ comment:
     
 # Social
 social:
+    facebook: wandering513
     weibo: wandering513
     github: wandering513
     twitter: wandering513
