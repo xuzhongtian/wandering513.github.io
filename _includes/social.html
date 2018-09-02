@@ -1,6 +1,16 @@
 <nav class="cover-navigation navigation--social">
   <ul class="navigation">
 
+  {% if site.social.facebook %}
+  <!-- Facebook -->
+  <li class="navigation__item">
+    <a href="http://facebook.com/{{site.social.facebook}}" title="@{{site.social.facebook}} 的脸书" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Facebook</span>
+    </a>
+  </li>
+  {% endif %}
+
   {% if site.social.weibo %}
   <!-- Weibo -->
   <li class="navigation__item">
