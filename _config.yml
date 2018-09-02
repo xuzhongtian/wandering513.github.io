@@ -1,5 +1,5 @@
 # Basic
-title: 徐钟天的笔记
+title: 徐钟天的世界 
 subtitle: 天地本无心
 #welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
 welcome_message: 不想当厨子的生物学家不是好黑客
@@ -41,7 +41,7 @@ comment:
     
 # Social
 social:
-        #weibo: wandering513
+    weibo: wandering513
     github: wandering513
     twitter: wandering513
     gplus: 107108267983477358170
