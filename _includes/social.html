@@ -1,6 +1,16 @@
 <nav class="cover-navigation navigation--social">
   <ul class="navigation">
 
+  {% if site.social.zhihu %}
+  <!-- Zhihu -->
+  <li class="navigation__item">
+    <a href="http://facebook.com/people/{{site.social.facebook}}" title="@{{site.social.zhihu}} 的知乎" target="_blank">
+      <i class='social fa fa-zhihu'></i>
+      <span class="label">Zhihu</span>
+    </a>
+  </li>
+  {% endif %}
+
   {% if site.social.facebook %}
   <!-- Facebook -->
   <li class="navigation__item">
