@@ -6,16 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <title>徐钟天的个人博客</title>
+  <title>徐钟天的笔记</title>
   <meta name="description" content="凡是过往 皆为序章">
   <meta name="author" content="Wei Wang">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="徐钟天的个人博客">
+  <meta name="twitter:title" content="徐钟天的笔记">
   <meta name="twitter:description" content="凡是过往 皆为序章">
   
   <meta property="og:type" content="article">
-  <meta property="og:title" content="徐钟天的个人博客">
+  <meta property="og:title" content="徐钟天的笔记">
   <meta property="og:description" content="凡是过往 皆为序章">
   
   <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
@@ -25,7 +25,7 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="canonical" href="http://localhost:4000/">
-  <link rel="alternate" type="application/rss+xml" title="徐钟天的个人博客" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="徐钟天的笔记" href="http://localhost:4000/feed.xml">
   
   <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
   
@@ -45,8 +45,8 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
 
-        <a href="/#blog" title="前往 徐钟天的个人博客 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="徐钟天的个人博客 logo" class="panel-cover__logo logo" /></a>
-        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for 徐钟天的个人博客" class="blog-button">徐钟天的个人博客</a></h1>
+        <a href="/#blog" title="前往 徐钟天的笔记 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="徐钟天的笔记 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for 徐钟天的笔记" class="blog-button">徐钟天的笔记</a></h1>
         
         <span class="panel-cover__subtitle panel-subtitle">天地本无心</span>
         
@@ -82,7 +82,7 @@
   
   <!-- Github -->
   <li class="navigation__item">
-    <a href="https://github.com/wandering513" title="@wandering513 的 Github" target="_blank">
+    <a href="https://github.com/wandering513" title="@wandering513 的Github" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -92,7 +92,7 @@
   
   <!-- Twitter -->
   <li class="navigation__item">
-    <a href="http://twitter.com/wandering513" title="@wandering513" target="_blank">
+    <a href="http://twitter.com/wandering513" title="@wandering513 的Twitter" target="_blank">
       <i class='social fa fa-twitter'></i>
       <span class="label">Twitter</span>
     </a>
@@ -135,7 +135,7 @@
     </div>
     
     
-    <div class="panel-cover--overlay cover-red"></div>
+    <div class="panel-cover--overlay cover-slate"></div>
     
   </div>
 </header>
@@ -148,16 +148,44 @@
   <ol class="post-list">
     
     <li>
+      <h2 class="post-list__post-title post-title"><a href="/2018/09/phd-theses-acknowledgement/" title="访问 博士论文致谢">博士论文致谢</a></h2>
+      <p class="excerpt">致谢部分回首读博的这几年，想要感谢的人也很多，内心对他们的感激，恐怕我的笨笔都不能写出百分之一。感谢研一的时候做湿实验的经历。在当时杨贞标老师组轮转，接受了关跃峰老师的直接指导，以及张莹师姐带着做实验的经历。这段时间认识了王水老师，贾蓓师姐，葛光军师兄，他们无论从实际实验操作技能，还是从举手投足表现出的科研素养，人文关怀，都深深地影响了自己。还有杨组的很多人，不能一一致谢，内心非常感激。感谢后来到了生物信息学平台的经历。在轮转之后，选择生物信息组，遇到了恩师刘仁义老师。当时，刚刚转到生物信...&hellip;</p>
+      <div class="post-list__meta"><time datetime="2018-09-01 14:32:24 +0800" class="post-list__meta--date date">2018-09-01</time> &#8226; <span class="post-list__meta--tags tags">人间四月天</span><a class="btn-border-small" href=/2018/09/phd-theses-acknowledgement/>继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2016/12/linux-shell-trick-for-bioinformatics-3/" title="访问 Shell tricks for bioinformatics 3">Shell tricks for bioinformatics 3</a></h2>
+      <p class="excerpt">1) 每行一个显示PATH的内容sed 's/:/\n/g' &lt;&lt;&lt; $PATH2) 监控文件的变化，特别是当大文件比对，然后你想看看output到底有没有变化时。watch ls -al test.sam3) 如何取出一个字符穿的前50个字符cat test.fa | grep -v  "&gt;" | cut -c 1-10cat test.fa | grep -v "&gt;" | sed -r 's/(.{50}).*/\1/g'当然还可以用awk，但此处就不写啊...&hellip;</p>
+      <div class="post-list__meta"><time datetime="2016-12-26 14:32:24 +0800" class="post-list__meta--date date">2016-12-26</time> &#8226; <span class="post-list__meta--tags tags">shell trick bioinformatics</span><a class="btn-border-small" href=/2016/12/linux-shell-trick-for-bioinformatics-3/>继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2016/12/linux-shell-trick-for-bioinformatics-2/" title="访问 Shell tricks for bioinformatics 2">Shell tricks for bioinformatics 2</a></h2>
+      <p class="excerpt">上一次写了一个《Linux tricks for bioinformatics系列文章之一》，有读者从后台给我留言指出了一些欠缺的地方，非常感谢这些认真的读者。如果读者想熟悉这些命令，建议将命令手动操作一遍，从管道符的左边到右边依次输入，观察输出，细细体会每一个操作的作用。只有灵活运用这些招式，才能打出一套漂亮的组合拳。1) 将fastq格式文件转化为fasta序列文件。在上个礼拜我提供了一种解法，但是后来有小伙伴在后台私信我，在使用的过程当中遇到了一些问题。因为fasta文件的质量行，也...&hellip;</p>
+      <div class="post-list__meta"><time datetime="2016-12-25 14:32:24 +0800" class="post-list__meta--date date">2016-12-25</time> &#8226; <span class="post-list__meta--tags tags">shell trick bioinformatics</span><a class="btn-border-small" href=/2016/12/linux-shell-trick-for-bioinformatics-2/>继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+    
+    <li>
+      <h2 class="post-list__post-title post-title"><a href="/2016/12/linux-shell-trick-for-bioinformatics-1/" title="访问 Shell tricks for bioinformatics 1">Shell tricks for bioinformatics 1</a></h2>
+      <p class="excerpt">1)  获得脚本的绝对路径script_path=$(cd $(dirname $0); pwd)cd $script_pathmkdir Folder2)  统计目录大小, 不计算隐藏文件夹du -sh * | grep -v '\.\/\.'3)  找出仅在file2中出现的行(不在file1中出现)grep -Fxv -f file1 file24)  监控文件的变化watch "ls -al myfile"5)  递归地查找当前目录下所有以”py”为后缀的文件，统计其行数find ...&hellip;</p>
+      <div class="post-list__meta"><time datetime="2016-12-24 14:32:24 +0800" class="post-list__meta--date date">2016-12-24</time> &#8226; <span class="post-list__meta--tags tags">shell trick bioinformatics</span><a class="btn-border-small" href=/2016/12/linux-shell-trick-for-bioinformatics-1/>继续阅读</a></div>
+      <hr class="post-list__divider" />
+    </li>
+    
+    <li>
       <h2 class="post-list__post-title post-title"><a href="/2016/02/hello-world-vno/" title="访问 Hello World - Vno">Hello World - Vno</a></h2>
       <p class="excerpt">What’s thisVno Jekyll is a theme for Jekyll. It is a port of my Ghost theme vno, which is originally developed from Dale Anthony’s Uno.Usage$ git clone https://github.com/onevcat/vno-jekyll.git your_site$ cd your_site$ bundler install$ bundler exe...&hellip;</p>
-      <div class="post-list__meta"><time datetime="2016-02-16 15:32:24 +0900" class="post-list__meta--date date">2016-02-16</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/02/hello-world-vno/>继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2016-02-16 14:32:24 +0800" class="post-list__meta--date date">2016-02-16</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/02/hello-world-vno/>继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
     
     <li>
       <h2 class="post-list__post-title post-title"><a href="/2016/02/sample-post/" title="访问 First publication">First publication</a></h2>
       <p class="excerpt">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-r...&hellip;</p>
-      <div class="post-list__meta"><time datetime="2016-02-15 15:32:24 +0900" class="post-list__meta--date date">2016-02-15</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/02/sample-post/>继续阅读</a></div>
+      <div class="post-list__meta"><time datetime="2016-02-15 14:32:24 +0800" class="post-list__meta--date date">2016-02-15</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/02/sample-post/>继续阅读</a></div>
       <hr class="post-list__divider" />
     </li>
     
@@ -177,7 +205,7 @@
             <section class="footer">
     <footer>
     	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
-        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2018-09-01 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
+        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2018-09-02 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
         <span class="footer__copyright">本站由 <a href="http://onev.cat">@onevcat</a> 创建，采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; 2018</span>
     </footer>
 </section>

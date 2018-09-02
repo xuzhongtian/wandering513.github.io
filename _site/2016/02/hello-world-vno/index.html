@@ -25,7 +25,7 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
   <link rel="canonical" href="http://localhost:4000/2016/02/hello-world-vno/">
-  <link rel="alternate" type="application/rss+xml" title="徐钟天的个人博客" href="http://localhost:4000/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="徐钟天的笔记" href="http://localhost:4000/feed.xml">
   
   <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
   
@@ -45,8 +45,8 @@
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
 
-        <a href="/#blog" title="前往 徐钟天的个人博客 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="徐钟天的个人博客 logo" class="panel-cover__logo logo" /></a>
-        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for 徐钟天的个人博客" class="blog-button">徐钟天的个人博客</a></h1>
+        <a href="/#blog" title="前往 徐钟天的笔记 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="徐钟天的笔记 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for 徐钟天的笔记" class="blog-button">徐钟天的笔记</a></h1>
         
         <span class="panel-cover__subtitle panel-subtitle">天地本无心</span>
         
@@ -82,7 +82,7 @@
   
   <!-- Github -->
   <li class="navigation__item">
-    <a href="https://github.com/wandering513" title="@wandering513 的 Github" target="_blank">
+    <a href="https://github.com/wandering513" title="@wandering513 的Github" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -92,7 +92,7 @@
   
   <!-- Twitter -->
   <li class="navigation__item">
-    <a href="http://twitter.com/wandering513" title="@wandering513" target="_blank">
+    <a href="http://twitter.com/wandering513" title="@wandering513 的Twitter" target="_blank">
       <i class='social fa fa-twitter'></i>
       <span class="label">Twitter</span>
     </a>
@@ -135,7 +135,7 @@
     </div>
     
     
-    <div class="panel-cover--overlay cover-red"></div>
+    <div class="panel-cover--overlay cover-slate"></div>
     
   </div>
 </header>
@@ -146,7 +146,7 @@
             <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <div class="post-meta">
-      <time datetime="2016-02-16 15:32:24 +0900" itemprop="datePublished" class="post-meta__date date">2016-02-16</time> &#8226; <span class="post-meta__tags tags"></span>
+      <time datetime="2016-02-16 14:32:24 +0800" itemprop="datePublished" class="post-meta__date date">2016-02-16</time> &#8226; <span class="post-meta__tags tags"></span>
     </div>
     <h1 class="post-title">Hello World - Vno</h1>
   </header>
@@ -158,12 +158,11 @@
 
 <h4 id="usage">Usage</h4>
 
-<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="gp">$ </span>git clone https://github.com/onevcat/vno-jekyll.git your_site
-<span class="gp">$ </span><span class="nb">cd </span>your_site
-<span class="gp">$ </span>bundler install
-<span class="gp">$ </span>bundler <span class="nb">exec </span>jekyll serve
-</code></pre>
-</div>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone https://github.com/onevcat/vno-jekyll.git your_site
+<span class="nv">$ </span><span class="nb">cd </span>your_site
+<span class="nv">$ </span>bundler <span class="nb">install</span>
+<span class="nv">$ </span>bundler <span class="nb">exec </span>jekyll serve
+</code></pre></div></div>
 
 <p>Your site with <code class="highlighter-rouge">Vno Jekyll</code> enabled should be accessible in http://127.0.0.1:4000.</p>
 
@@ -218,13 +217,21 @@
 <section class="read-more">
    
    
+   <div class="read-more-item">
+       <span class="read-more-item-dim">最近的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2016/12/linux-shell-trick-for-bioinformatics-1/" title="link to Shell tricks for bioinformatics 1">Shell tricks for bioinformatics 1</a></h2>
+       <p class="excerpt">1)  获得脚本的绝对路径script_path=$(cd $(dirname $0); pwd)cd $script_pathmkdir Folder2)  统计目录大小, 不计算隐藏文件夹du -sh * | grep -v '\.\/\.'3)  找出仅在file2中出现的行(不在file1中出现)grep -Fxv -f file1 file24)  监控文件的变化watch "ls -al myfile"5)  递归地查找当前目录下所有以”py”为后缀的文件，统计其行数find ...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2016-12-24 14:32:24 +0800" class="post-list__meta--date date">2016-12-24</time> &#8226; <span class="post-list__meta--tags tags">shell trick bioinformatics</span><a class="btn-border-small" href=/2016/12/linux-shell-trick-for-bioinformatics-1/>继续阅读</a></div>
+   </div>
+   
+   
    
    
    <div class="read-more-item">
        <span class="read-more-item-dim">更早的文章</span>
        <h2 class="post-list__post-title post-title"><a href="/2016/02/sample-post/" title="link to First publication">First publication</a></h2>
        <p class="excerpt">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-r...&hellip;</p>
-       <div class="post-list__meta"><time datetime="2016-02-15 15:32:24 +0900" class="post-list__meta--date date">2016-02-15</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/02/sample-post/>继续阅读</a></div>
+       <div class="post-list__meta"><time datetime="2016-02-15 14:32:24 +0800" class="post-list__meta--date date">2016-02-15</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/02/sample-post/>继续阅读</a></div>
    </div>
    
 </section>
@@ -260,7 +267,7 @@
             <section class="footer">
     <footer>
     	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
-        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2018-09-01 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
+        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2018-09-02 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
         <span class="footer__copyright">本站由 <a href="http://onev.cat">@onevcat</a> 创建，采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; 2018</span>
     </footer>
 </section>

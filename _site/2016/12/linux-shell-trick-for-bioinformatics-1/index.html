@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Shell tricks for bioinformatics 1</title>
+  <meta name="description" content="1)  获得脚本的绝对路径">
+  <meta name="author" content="Wei Wang">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shell tricks for bioinformatics 1">
+  <meta name="twitter:description" content="1)  获得脚本的绝对路径">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Shell tricks for bioinformatics 1">
+  <meta property="og:description" content="1)  获得脚本的绝对路径">
+  
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-1/">
+  <link rel="alternate" type="application/rss+xml" title="徐钟天的笔记" href="http://localhost:4000/feed.xml">
+  
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+  
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/assets/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/#blog" title="前往 徐钟天的笔记 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="徐钟天的笔记 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for 徐钟天的笔记" class="blog-button">徐钟天的笔记</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">天地本无心</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">凡是过往 皆为序章</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+        
+        <p class="panel-cover__description">不想当厨子的生物学家不是好黑客</p>
+        
+        
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="Visit blog" class="blog-button">Blog</a></li>
+                
+                  <li class="navigation__item"><a href="http://baidu.com" target="_blank" title="select paper by time">Archive</a></li>
+                
+                  <li class="navigation__item"><a href="http://baidu.com" target="_blank" title="select paper by Tag">Tag</a></li>
+                
+                  <li class="navigation__item"><a href="http://baidu.com" target="_blank" title="My resume">Resume</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+          
+          <div><nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  
+
+  
+  <!-- Github -->
+  <li class="navigation__item">
+    <a href="https://github.com/wandering513" title="@wandering513 的Github" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+  
+  
+  
+  <!-- Twitter -->
+  <li class="navigation__item">
+    <a href="http://twitter.com/wandering513" title="@wandering513 的Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+  
+
+  
+  <!-- Google Plus -->
+  <li class="navigation__item">
+    <a href="https://plus.google.com/107108267983477358170" rel="author" title="Google+" target="_blank">
+      <i class='social fa fa-google-plus-square'></i>
+      <span class="label">Google Plus</span>
+    </a>
+  </li>
+  
+
+  <!-- RSS -->
+  <li class="navigation__item">
+    <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+  
+  <!-- Email -->
+  <li class="navigation__item">
+    <a href="mailto:xuzhongtian11@gmail.com" title="Contact me">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+  
+
+  </ul>
+</nav>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-cover--overlay cover-slate"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2016-12-24 14:32:24 +0800" itemprop="datePublished" class="post-meta__date date">2016-12-24</time> &#8226; <span class="post-meta__tags tags">shell trick bioinformatics</span>
+    </div>
+    <h1 class="post-title">Shell tricks for bioinformatics 1</h1>
+  </header>
+
+  <section class="post">
+    <p>1)  获得脚本的绝对路径</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">script_path</span><span class="o">=</span><span class="k">$(</span><span class="nb">cd</span> <span class="k">$(</span><span class="nb">dirname</span> <span class="nv">$0</span><span class="k">)</span><span class="p">;</span> <span class="nb">pwd</span><span class="k">)</span>
+<span class="nb">cd</span> <span class="nv">$script_path</span>
+<span class="nb">mkdir </span>Folder
+</code></pre></div></div>
+
+<p>2)  统计目录大小, 不计算隐藏文件夹</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">du</span> <span class="nt">-sh</span> <span class="k">*</span> | <span class="nb">grep</span> <span class="nt">-v</span> <span class="s1">'\.\/\.'</span>
+</code></pre></div></div>
+
+<p>3)  找出仅在file2中出现的行(不在file1中出现)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="nt">-Fxv</span> <span class="nt">-f</span> file1 file2
+</code></pre></div></div>
+
+<p>4)  监控文件的变化</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>watch <span class="s2">"ls -al myfile"</span>
+</code></pre></div></div>
+
+<p>5)  递归地查找当前目录下所有以”py”为后缀的文件，统计其行数</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="nb">.</span> <span class="nt">-name</span> <span class="s2">".*py "</span> | xargs <span class="nb">wc</span> <span class="nt">-l</span> 
+</code></pre></div></div>
+
+<p>6)  每行一个显示PATH的内容</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="s1">'s/:/\n/g'</span> <span class="o">&lt;&lt;&lt;</span> <span class="nv">$PATH</span>
+</code></pre></div></div>
+
+<p>7)  递归地删除空目录</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>find <span class="nb">.</span> <span class="nt">-depth</span> <span class="nt">-type</span> d <span class="nt">-empty</span> <span class="nt">-exec</span> <span class="nb">rmdir</span> <span class="nt">-v</span> <span class="o">{}</span> <span class="se">\;</span>
+</code></pre></div></div>
+
+<p>8)  复制所有文件. 所有的普通的，隐藏的和以减号开头的文件</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cp</span> ./<span class="k">*</span> .[!.]<span class="k">*</span> ..?<span class="k">*</span> /path/to/dir 
+</code></pre></div></div>
+
+<p>9)  因为我们是想对第四列的某一项进行修改，所以先要确保除了第四列之外没有这样的值，避免错误修改</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cut</span> <span class="nt">-f1-3</span>,5-57 <span class="nt">-d</span> <span class="s2">","</span> test.csv |grep <span class="s2">"mid_school"</span>|le
+</code></pre></div></div>
+
+<p>10)  用sed进行替换操作</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="nt">-e</span> <span class="s1">'s/mid_school/Mid_school/'</span> test.csv
+</code></pre></div></div>
+
+<p>11) 如何取出文件里面不含有NA的行</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>perl <span class="nt">-ne</span> <span class="s1">'print unlesss /NA/'</span> file
+<span class="nb">awk</span> <span class="s1">'{if(!/NA/){print $0}}'</span> file
+<span class="nb">awk</span> <span class="s1">'$0 !~ /NA/ {print}'</span> file 
+<span class="nb">grep</span> <span class="nt">-v</span> <span class="s2">"NA"</span> file
+<span class="nb">sed</span> <span class="nt">-e</span> <span class="s1">'/*NA*/d'</span> file
+</code></pre></div></div>
+
+<p>12) search some text from all files inside a directory</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="nt">-Hrn</span> <span class="s2">"text"</span> <span class="nb">.</span>
+</code></pre></div></div>
+
+<p>13) Automatically update all the installed python packages</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for </span>i <span class="k">in</span> <span class="sb">`</span>pip list <span class="nt">-o</span> <span class="nt">--format</span> legacy|awk <span class="s1">'{print $1}'</span><span class="sb">`</span><span class="p">;</span> <span class="k">do </span>pip <span class="nb">install</span> <span class="nt">--upgrade</span> <span class="nv">$i</span><span class="p">;</span> <span class="k">done</span>
+</code></pre></div></div>
+
+<p>14)  如何从CDS文件中提取gene_list:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">grep</span> <span class="s2">"^&gt;"</span> sequence.fasta | <span class="nb">tr</span> <span class="nt">-d</span> <span class="s2">"&gt;"</span> <span class="o">&gt;</span>geneID.txt 
+</code></pre></div></div>
+
+<p>15) 如何取出fastq的5’端的前50个碱基。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="s1">'{if(NR%4==2||NR%4==0) {print substr($0,1,50)} else {print $0} }'</span> test.fq
+</code></pre></div></div>
+
+<p>16) 如何取出fastq的3’端的后50个碱基。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="s1">'{if(NR%4==2||NR%4==0) {print substr($0,length($0)-5 + 1)}  }'</span> test.fq
+</code></pre></div></div>
+
+<p>为了方便使用电脑的读者，本文也同步发表在知乎专栏。有兴趣的可以移步知乎。</p>
+
+<p><a href="https://zhuanlan.zhihu.com/pybio">知乎链接</a>：  https://zhuanlan.zhihu.com/pybio</p>
+
+
+  </section>
+</article>
+
+<section class="read-more">
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">最近的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2016/12/linux-shell-trick-for-bioinformatics-2/" title="link to Shell tricks for bioinformatics 2">Shell tricks for bioinformatics 2</a></h2>
+       <p class="excerpt">上一次写了一个《Linux tricks for bioinformatics系列文章之一》，有读者从后台给我留言指出了一些欠缺的地方，非常感谢这些认真的读者。如果读者想熟悉这些命令，建议将命令手动操作一遍，从管道符的左边到右边依次输入，观察输出，细细体会每一个操作的作用。只有灵活运用这些招式，才能打出一套漂亮的组合拳。1) 将fastq格式文件转化为fasta序列文件。在上个礼拜我提供了一种解法，但是后来有小伙伴在后台私信我，在使用的过程当中遇到了一些问题。因为fasta文件的质量行，也...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2016-12-25 14:32:24 +0800" class="post-list__meta--date date">2016-12-25</time> &#8226; <span class="post-list__meta--tags tags">shell trick bioinformatics</span><a class="btn-border-small" href=/2016/12/linux-shell-trick-for-bioinformatics-2/>继续阅读</a></div>
+   </div>
+   
+   
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2016/02/hello-world-vno/" title="link to Hello World - Vno">Hello World - Vno</a></h2>
+       <p class="excerpt">What’s thisVno Jekyll is a theme for Jekyll. It is a port of my Ghost theme vno, which is originally developed from Dale Anthony’s Uno.Usage$ git clone https://github.com/onevcat/vno-jekyll.git your_site$ cd your_site$ bundler install$ bundler exe...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2016-02-16 14:32:24 +0800" class="post-list__meta--date date">2016-02-16</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/02/hello-world-vno/>继续阅读</a></div>
+   </div>
+   
+</section>
+
+<section class="post-comments">
+  
+    <div id="disqus_thread"></div>
+    <script>
+    
+    var disqus_config = function () {
+        this.page.url = "http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-1/";
+        this.page.identifier = "/2016/12/linux-shell-trick-for-bioinformatics-1/";
+    };
+
+    var disqus_shortname = 'vno-jekyll';
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+    
+  
+  
+  
+  
+</section>
+
+
+            <section class="footer">
+    <footer>
+    	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
+        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2018-09-02 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
+        <span class="footer__copyright">本站由 <a href="http://onev.cat">@onevcat</a> 创建，采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; 2018</span>
+    </footer>
+</section>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+  </body>
+
+</html>

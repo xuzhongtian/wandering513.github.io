@@ -1,13 +1,369 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>徐钟天的个人博客</title>
+    <title>徐钟天的笔记</title>
     <description>凡是过往 皆为序章</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Sep 2018 16:33:17 +0800</pubDate>
-    <lastBuildDate>Sat, 01 Sep 2018 16:33:17 +0800</lastBuildDate>
-    <generator>Jekyll v3.4.0</generator>
+    <pubDate>Sun, 02 Sep 2018 09:39:11 +0800</pubDate>
+    <lastBuildDate>Sun, 02 Sep 2018 09:39:11 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+      <item>
+        <title>博士论文致谢</title>
+        <description>&lt;h1 id=&quot;致谢部分&quot;&gt;致谢部分&lt;/h1&gt;
+
+&lt;p&gt;回首读博的这几年，想要感谢的人也很多，内心对他们的感激，恐怕我的笨笔都不能写出百分之一。&lt;/p&gt;
+
+&lt;p&gt;感谢研一的时候做湿实验的经历。在当时杨贞标老师组轮转，接受了关跃峰老师的直接指导，以及张莹师姐带着做实验的经历。这段时间认识了王水老师，贾蓓师姐，葛光军师兄，他们无论从实际实验操作技能，还是从举手投足表现出的科研素养，人文关怀，都深深地影响了自己。还有杨组的很多人，不能一一致谢，内心非常感激。&lt;/p&gt;
+
+&lt;p&gt;感谢后来到了生物信息学平台的经历。在轮转之后，选择生物信息组，遇到了恩师刘仁义老师。当时，刚刚转到生物信息学组，知识背景比较薄弱，迷茫得有点自暴自弃，受到了刘老师严厉的批评。但一个真正的导师，不会只会用温暖的话安慰学生之后无所作为，也不会只用严苛的话批评学生之后弃之不顾。回首师从刘老师的这么多年，刘老师不仅能够细致到从技术层面，代码水平上给与自己指导，也能够高瞻远瞩地从大课题方向上帮助自己把握课题。在这里必须要满怀深情地感谢刘仁义导师，对自己学业的帮助，人生的指导。也感谢实验室的郑奇婕老师，姜川师兄，李岩强师兄，孙一丹师姐，赵程师兄，訾海玲师姐，张圆圆师姐，吕姗姗师妹，姚少伦师妹，肖嘉靖师弟，葛丹凤师妹，陈春香师妹对自己的帮助，缅怀和大家相处的时光。&lt;/p&gt;
+
+&lt;p&gt;感谢其他的合作者。通过分析数据，接触到了很多其他实验室的老师和学生，开拓了视野，感谢他们。在这里，需要特别地，深情地向北京动物所的崔峰女士致谢，我们是通过课题的合作认识的，崔老师仿佛是我读博生涯的第二导师。在自己已经对科研差点失去兴趣的时候，崔老师锐意进取，积极回馈的合作态度，重新在我心里种上了希望的火花。崔老师是一个很有人格魅力的人，她雷厉风行，工作认真，关怀学生，重视每一个人的努力，结果也是在两个实验室的合作之中，做出一些我们觉得有意思的科研成果。能够和崔老师合作，是自己科研生涯里的一个转折点，崔老师展现出来的精神气质对自己的人生有不可忽视的影响，再次真诚地感谢崔峰老师，通过与崔老师的合作，也认识了Cui lab的很多有爱的小伙伴，比如赵婉老师，王炜师兄，崔娜师太等人，谢谢你们带给了自己很多美好的回忆。&lt;/p&gt;
+
+&lt;p&gt;感谢逆境中心的各位老师。感谢各位老师为了给大家创造出安心的科研环境所作出的辛苦努力，特别地感谢菅新宇老师，郑奇婕老师作为lab manager，事无巨细地替大家操心； 感谢孙瑶老师，罗梅芳老师，李盛薇老师，张曙栎老师等等行政处老师的辛苦工作； 感谢吕幼翔老师，张红老师，刘菲老师等等研究生处的老师，学生工作细致而繁杂，谢谢你们耐心地一件件处理。&lt;/p&gt;
+
+&lt;p&gt;感谢自己的各位朋友。&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 01 Sep 2018 14:32:24 +0800</pubDate>
+        <link>http://localhost:4000/2018/09/phd-theses-acknowledgement/</link>
+        <guid isPermaLink="true">http://localhost:4000/2018/09/phd-theses-acknowledgement/</guid>
+        
+        <category>人间四月天</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Shell tricks for bioinformatics 3</title>
+        <description>&lt;p&gt;1) 每行一个显示PATH的内容&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/:/\n/g'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2) 监控文件的变化，特别是当大文件比对，然后你想看看output到底有没有变化时。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;watch &lt;span class=&quot;nb&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-al&lt;/span&gt; test.sam
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3) 如何取出一个字符穿的前50个字符&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;test.fa | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt;  &lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1-10
+&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;test.fa | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;&quot;&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/(.{50}).*/\1/g'&lt;/span&gt;
+当然还可以用awk，但此处就不写啊。
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;4) 昨天在生信菜鸟群里，有一个人问，她想把一个Paired end序列的5’端前50个base,　和3’端的后50个base取出来做mapping, 想在bowtie2里面找参数，据我所知是没有这样的参数的。不过用shell也就一行的事。
+下面是取出5’端前50个base的命令：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{if(NR%4==2||NR%4==0) {print substr($0,1,50)} else {print $0} }'&lt;/span&gt; test.fq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;需要注意的是由于第二行的序列和第四行的质量值是一一对应的，所以如果序列只取前50个，表示质量值的那一行也只需要取前50个。&lt;/p&gt;
+
+&lt;p&gt;5) 同理取出3’端的后50个base， 然后将结果依然保存为fastq的方法是：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{if(NR%4==2||NR%4==0) {print substr($0,length($0)-5 + 1)}  }'&lt;/span&gt; test.fq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;6) 假如说，我们现在有一个sRNAs的数据，拿到之后呢第一步就是去接头。取几行序列出来，用clustwl之类的工具，就能很轻易地找到sRNAs的adapter序列。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;clustal sRNAs.fa
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;7) 去掉接头序列后，就应该去掉含有测序的ambiguous碱基，通常用N表示。也就是说，如果序列中含有N碱基，这条reads就应该被抛弃。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'N;s/\n/\t/'&lt;/span&gt; sRNAs.fa | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/\t.*N/d'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;稍微地解释一下这段代码，fasta是以两行为单位，一行header，一行sequence, 所以我们先用sed将两行变一行，换行符变为\t分隔符; 然后将序列中含有N的reads给删掉,注意此时header中有N字符是可以容许的，然后末了再用tr将\t分隔符又又换换行符输出。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;7) 去掉“N”这种ambiguous碱基之后，我们有必要做长度筛选，因为植物里面的sRNAs一般是18nt-30nt，而去掉adator之后，可能有些reads特别短了，还有些很长，可能是来自于structural RNAs的降解产物，所以应该去除这些过长或者过短的，只保留18-30的reads进行分析。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'N;s/\n/\t/'&lt;/span&gt; test.fa | &lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'BEGIN{OFS=&quot;\t&quot;;} {if (length($2)&amp;gt;=18&amp;amp;&amp;amp;length($2)&amp;lt;=30) {print $1,&quot;\n&quot;,$2}}'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;8)  对于去掉接头，去掉“N”碱基，去掉过短或者过长的sRNAs序列之后，我们下一步就该看看sRNAs有那些特征了，比如一个比较重要的特征就是5’端的碱基频率，因为不同的5’端碱基，决定了sRNAs可能与那种AGO蛋白相结合，然后发挥生理作用。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;test.fa | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;&quot;&lt;/span&gt; |cut &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; 1-1 | &lt;span class=&quot;nb&quot;&gt;sort&lt;/span&gt;| &lt;span class=&quot;nb&quot;&gt;uniq&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;| &lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{print $2,$1}'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot; &quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;9) 对于去完接头的sRNAs序列文件，虽然还没有进行去掉结构RNA等步骤，但这时候的你，已经迫不及待地看看sRNAs的长度分布了。怎么办呢。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;sRNAs.fa | &lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'NR%2==0'&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{print length($0)}'&lt;/span&gt;|sort |uniq &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt;|sed &lt;span class=&quot;s1&quot;&gt;'s/^[][ ]*//g'&lt;/span&gt;|awk &lt;span class=&quot;s1&quot;&gt;'{print $2,$1}'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;10)  把一个文本倒过来输出，即最后一行变成第一行，倒数第二行变成第二行。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;seq &lt;/span&gt;9 | &lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{ lifo[NR]=$0 }END{ for(lno=NR;lno &amp;gt; 0;lno--){print lifo[lno];}}'&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;seq &lt;/span&gt;9 | &lt;span class=&quot;nb&quot;&gt;tac&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;为了方便使用电脑的读者，本文也同步发表在知乎专栏。有兴趣的可以移步知乎。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/pybio&quot;&gt;知乎链接&lt;/a&gt;：  https://zhuanlan.zhihu.com/pybio&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 26 Dec 2016 14:32:24 +0800</pubDate>
+        <link>http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-3/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-3/</guid>
+        
+        <category>shell trick bioinformatics</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Shell tricks for bioinformatics 2</title>
+        <description>&lt;p&gt;上一次写了一个《Linux tricks for bioinformatics系列文章之一》，有读者从后台给我留言指出了一些欠缺的地方，非常感谢这些认真的读者。如果读者想熟悉这些命令，建议将命令手动操作一遍，从管道符的左边到右边依次输入，观察输出，细细体会每一个操作的作用。只有灵活运用这些招式，才能打出一套漂亮的组合拳。&lt;/p&gt;
+
+&lt;p&gt;1) 将fastq格式文件转化为fasta序列文件。在上个礼拜我提供了一种解法，但是后来有小伙伴在后台私信我，在使用的过程当中遇到了一些问题。因为fasta文件的质量行，也有可能是以@开头。当碰到这样的情况的时候，下面的方法就会带来问题。在深表歉意的同时，贡献了另外一种解法。&lt;/p&gt;
+
+&lt;p&gt;原先的解法：&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/^@/!d;s//&amp;gt;/;N'&lt;/span&gt; your.fastq&amp;gt; your.fasta 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;新解法：&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{if(NR%4==1||NR%4==2){print $0}}'&lt;/span&gt;  test.fq | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/^@/&amp;gt;/g'&lt;/span&gt; |less&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;2)  有时候，比如说我们需要做一个clustalw，我们需要将多行的fasta文件(multiple line fasta)格式文件，转换成单行的fasta文件(single line fasta)序列文件，怎么办呢。 巧用awk + printf一行搞定。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/^&amp;gt;/ { print n $0;}  !/^&amp;gt;/ {printf &quot;%s&quot;, $0, n=&quot;\n&quot;}  END {print &quot;&quot;}'&lt;/span&gt;  test.fa&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;3) 在做GO注释的时候，我们一定会用到go2geneid.txt这个文件。以拟南芥为例，它的go2geneid.txt文件如下。&lt;/p&gt;
+
+&lt;p&gt;go2geneID.txt文件中，GO号和gene之间是tab分开，gene之间是以逗号分开的。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GO:0045230&lt;/td&gt;
+      &lt;td&gt;AT4G26910,AT5G55070&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GO:0010282&lt;/td&gt;
+      &lt;td&gt;AT5G45890&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GO:0010494&lt;/td&gt;
+      &lt;td&gt;AT1G70070&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GO:0034702&lt;/td&gt;
+      &lt;td&gt;AT2G24240,AT3G09030,AT4G30940,AT5G41330,AT5G55000&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;现在我们很好奇那个GO号拥有的基因数目最多，写脚本吗？NO，shell一行搞定。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{if(NR%4==1||NR%4==2){print $0}}'&lt;/span&gt;  test.fq | &lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/^@/&amp;gt;/g'&lt;/span&gt; |less&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt; &lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GO:0005575&lt;/td&gt;
+      &lt;td&gt;26769&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GO:0008150&lt;/td&gt;
+      &lt;td&gt;25831&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;GO:0003674&lt;/td&gt;
+      &lt;td&gt;25398&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;所以我们知道拥有基因数目最多的GO的的名称为GO:0005575，仅仅这一个条目居然有26769个基因，查了一下含义，是表示&lt;strong&gt;cell component&lt;/strong&gt;，这也就不足为奇了。&lt;/p&gt;
+
+&lt;p&gt;4) 如何统计文件的行数。大家心想，还用说吗？ &lt;code class=&quot;highlighter-rouge&quot;&gt;wc -l&lt;/code&gt;不就好了。但是当这个问题交给awk时，awk的解法是。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'END {print NR}'&lt;/span&gt; file.txt 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这种情况下，虽然awk可以胜任，但是不建议使用awk了 ，因为已经有更简单的解法。简洁胜于复杂。&lt;/p&gt;
+
+&lt;p&gt;5)  当我们想要提取文件的某列时。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; 7 file.txt &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; out.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;当然交给万能的awk，则会这么写:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-F&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'\t'&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{print $7}'&lt;/span&gt;  file.txt &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; out.txt  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;这种时候就要读者自己去权衡了，因为自己习惯并欣赏awk，所以个人反而更喜欢后一种写法。&lt;/p&gt;
+
+&lt;p&gt;6)  将GFF里面第三列不是chromosome的行给取出来。&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{if ($3 != &quot;chromosome&quot;) print $0}'&lt;/span&gt;  TAIR10.gff&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;7)  删除文件里所有的空行&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/^$/d'&lt;/span&gt; file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;8)  有时候我们不想看到header，直接用文件本身的内容去进行下一步操作，我们需要将header去掉。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'1d'&lt;/span&gt;  file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;这个题目当然也可以用awk去实现，用awk的解法是…&lt;/p&gt;
+
+&lt;p&gt;都看了两篇系列文章了，自己去试试呗~~&lt;/p&gt;
+
+&lt;p&gt;9)  有时候我们可能会需要使用awk为每一行行头添加字符串。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{print &quot;gene_ID &quot; $0}'&lt;/span&gt; file.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;10) 统计fastq文件里面的reads数目。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt;  &lt;span class=&quot;nt&quot;&gt;-c&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;^@&quot;&lt;/span&gt;  test.fastq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;本来准备把这种解法也算一个，但是这种方法依然有一个问题，那就是质量行是有可能是以@开头的，这样做就会导致有点点误差，虽然也不会差太大。&lt;/p&gt;
+
+&lt;p&gt;因此应该是用下面的方法。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cat &lt;/span&gt;test.fastq | &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;wc&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;同理，也可以很轻松能够地写出统计fasta文件函数的shell命令，就是改成除以2呗。&lt;/p&gt;
+
+&lt;p&gt;为了方便使用电脑的读者，本文也同步发表在知乎专栏。有兴趣的可以移步知乎。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/pybio&quot;&gt;知乎链接&lt;/a&gt;：  https://zhuanlan.zhihu.com/pybio&lt;/p&gt;
+</description>
+        <pubDate>Sun, 25 Dec 2016 14:32:24 +0800</pubDate>
+        <link>http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-2/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-2/</guid>
+        
+        <category>shell trick bioinformatics</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Shell tricks for bioinformatics 1</title>
+        <description>&lt;p&gt;1)  获得脚本的绝对路径&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;script_path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;dirname&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$0&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$script_path&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;mkdir &lt;/span&gt;Folder
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2)  统计目录大小, 不计算隐藏文件夹&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;du&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-sh&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; | &lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'\.\/\.'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;3)  找出仅在file2中出现的行(不在file1中出现)&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Fxv&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; file1 file2
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;4)  监控文件的变化&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;watch &lt;span class=&quot;s2&quot;&gt;&quot;ls -al myfile&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;5)  递归地查找当前目录下所有以”py”为后缀的文件，统计其行数&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-name&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;.*py &quot;&lt;/span&gt; | xargs &lt;span class=&quot;nb&quot;&gt;wc&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;6)  每行一个显示PATH的内容&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/:/\n/g'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$PATH&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;7)  递归地删除空目录&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;find &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-depth&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; d &lt;span class=&quot;nt&quot;&gt;-empty&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-exec&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;rmdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt; &lt;span class=&quot;se&quot;&gt;\;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;8)  复制所有文件. 所有的普通的，隐藏的和以减号开头的文件&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cp&lt;/span&gt; ./&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; .[!.]&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; ..?&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt; /path/to/dir 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;9)  因为我们是想对第四列的某一项进行修改，所以先要确保除了第四列之外没有这样的值，避免错误修改&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cut&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-f1-3&lt;/span&gt;,5-57 &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;,&quot;&lt;/span&gt; test.csv |grep &lt;span class=&quot;s2&quot;&gt;&quot;mid_school&quot;&lt;/span&gt;|le
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;10)  用sed进行替换操作&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'s/mid_school/Mid_school/'&lt;/span&gt; test.csv
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;11) 如何取出文件里面不含有NA的行&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;perl &lt;span class=&quot;nt&quot;&gt;-ne&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'print unlesss /NA/'&lt;/span&gt; file
+&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{if(!/NA/){print $0}}'&lt;/span&gt; file
+&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'$0 !~ /NA/ {print}'&lt;/span&gt; file 
+&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-v&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;NA&quot;&lt;/span&gt; file
+&lt;span class=&quot;nb&quot;&gt;sed&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-e&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'/*NA*/d'&lt;/span&gt; file
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;12) search some text from all files inside a directory&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-Hrn&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;13) Automatically update all the installed python packages&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;i &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;pip list &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--format&lt;/span&gt; legacy|awk &lt;span class=&quot;s1&quot;&gt;'{print $1}'&lt;/span&gt;&lt;span class=&quot;sb&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do &lt;/span&gt;pip &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--upgrade&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;14)  如何从CDS文件中提取gene_list:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;^&amp;gt;&quot;&lt;/span&gt; sequence.fasta | &lt;span class=&quot;nb&quot;&gt;tr&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-d&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;geneID.txt 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;15) 如何取出fastq的5’端的前50个碱基。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{if(NR%4==2||NR%4==0) {print substr($0,1,50)} else {print $0} }'&lt;/span&gt; test.fq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;16) 如何取出fastq的3’端的后50个碱基。&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;awk&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'{if(NR%4==2||NR%4==0) {print substr($0,length($0)-5 + 1)}  }'&lt;/span&gt; test.fq
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;为了方便使用电脑的读者，本文也同步发表在知乎专栏。有兴趣的可以移步知乎。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://zhuanlan.zhihu.com/pybio&quot;&gt;知乎链接&lt;/a&gt;：  https://zhuanlan.zhihu.com/pybio&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 24 Dec 2016 14:32:24 +0800</pubDate>
+        <link>http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-1/</guid>
+        
+        <category>shell trick bioinformatics</category>
+        
+        
+      </item>
     
       <item>
         <title>Hello World - Vno</title>
@@ -17,12 +373,11 @@
 
 &lt;h4 id=&quot;usage&quot;&gt;Usage&lt;/h4&gt;
 
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git clone https://github.com/onevcat/vno-jekyll.git your_site
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;your_site
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundler install
-&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;bundler &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;git clone https://github.com/onevcat/vno-jekyll.git your_site
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;your_site
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundler &lt;span class=&quot;nb&quot;&gt;install&lt;/span&gt;
+&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundler &lt;span class=&quot;nb&quot;&gt;exec &lt;/span&gt;jekyll serve
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Your site with &lt;code class=&quot;highlighter-rouge&quot;&gt;Vno Jekyll&lt;/code&gt; enabled should be accessible in http://127.0.0.1:4000.&lt;/p&gt;
 
@@ -88,8 +443,8 @@
 
 &lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;np&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;plt&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; 
 &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlim&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;

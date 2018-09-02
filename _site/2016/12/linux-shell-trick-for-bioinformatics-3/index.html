@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Shell tricks for bioinformatics 3</title>
+  <meta name="description" content="1) 每行一个显示PATH的内容">
+  <meta name="author" content="Wei Wang">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shell tricks for bioinformatics 3">
+  <meta name="twitter:description" content="1) 每行一个显示PATH的内容">
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Shell tricks for bioinformatics 3">
+  <meta property="og:description" content="1) 每行一个显示PATH的内容">
+  
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+  <link href="/assets/images/favicon.png" rel="shortcut icon" type="image/png">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-3/">
+  <link rel="alternate" type="application/rss+xml" title="徐钟天的笔记" href="http://localhost:4000/feed.xml">
+  
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+  
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/assets/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/#blog" title="前往 徐钟天的笔记 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="徐钟天的笔记 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="link to homepage for 徐钟天的笔记" class="blog-button">徐钟天的笔记</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">天地本无心</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">凡是过往 皆为序章</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+        
+        <p class="panel-cover__description">不想当厨子的生物学家不是好黑客</p>
+        
+        
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="Visit blog" class="blog-button">Blog</a></li>
+                
+                  <li class="navigation__item"><a href="http://baidu.com" target="_blank" title="select paper by time">Archive</a></li>
+                
+                  <li class="navigation__item"><a href="http://baidu.com" target="_blank" title="select paper by Tag">Tag</a></li>
+                
+                  <li class="navigation__item"><a href="http://baidu.com" target="_blank" title="My resume">Resume</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+          
+          <div><nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  
+
+  
+  <!-- Github -->
+  <li class="navigation__item">
+    <a href="https://github.com/wandering513" title="@wandering513 的Github" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+  
+  
+  
+  <!-- Twitter -->
+  <li class="navigation__item">
+    <a href="http://twitter.com/wandering513" title="@wandering513 的Twitter" target="_blank">
+      <i class='social fa fa-twitter'></i>
+      <span class="label">Twitter</span>
+    </a>
+  </li>
+  
+
+  
+  <!-- Google Plus -->
+  <li class="navigation__item">
+    <a href="https://plus.google.com/107108267983477358170" rel="author" title="Google+" target="_blank">
+      <i class='social fa fa-google-plus-square'></i>
+      <span class="label">Google Plus</span>
+    </a>
+  </li>
+  
+
+  <!-- RSS -->
+  <li class="navigation__item">
+    <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+  
+  <!-- Email -->
+  <li class="navigation__item">
+    <a href="mailto:xuzhongtian11@gmail.com" title="Contact me">
+      <i class='social fa fa-envelope'></i>
+      <span class="label">Email</span>
+    </a>
+  </li>
+  
+
+  </ul>
+</nav>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-cover--overlay cover-slate"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2016-12-26 14:32:24 +0800" itemprop="datePublished" class="post-meta__date date">2016-12-26</time> &#8226; <span class="post-meta__tags tags">shell trick bioinformatics</span>
+    </div>
+    <h1 class="post-title">Shell tricks for bioinformatics 3</h1>
+  </header>
+
+  <section class="post">
+    <p>1) 每行一个显示PATH的内容</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="s1">'s/:/\n/g'</span> <span class="o">&lt;&lt;&lt;</span> <span class="nv">$PATH</span>
+</code></pre></div></div>
+
+<p>2) 监控文件的变化，特别是当大文件比对，然后你想看看output到底有没有变化时。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>watch <span class="nb">ls</span> <span class="nt">-al</span> test.sam
+</code></pre></div></div>
+
+<p>3) 如何取出一个字符穿的前50个字符</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat </span>test.fa | <span class="nb">grep</span> <span class="nt">-v</span>  <span class="s2">"&gt;"</span> | <span class="nb">cut</span> <span class="nt">-c</span> 1-10
+<span class="nb">cat </span>test.fa | <span class="nb">grep</span> <span class="nt">-v</span> <span class="s2">"&gt;"</span> | <span class="nb">sed</span> <span class="nt">-r</span> <span class="s1">'s/(.{50}).*/\1/g'</span>
+当然还可以用awk，但此处就不写啊。
+
+</code></pre></div></div>
+
+<p>4) 昨天在生信菜鸟群里，有一个人问，她想把一个Paired end序列的5’端前50个base,　和3’端的后50个base取出来做mapping, 想在bowtie2里面找参数，据我所知是没有这样的参数的。不过用shell也就一行的事。
+下面是取出5’端前50个base的命令：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="s1">'{if(NR%4==2||NR%4==0) {print substr($0,1,50)} else {print $0} }'</span> test.fq
+</code></pre></div></div>
+
+<p>需要注意的是由于第二行的序列和第四行的质量值是一一对应的，所以如果序列只取前50个，表示质量值的那一行也只需要取前50个。</p>
+
+<p>5) 同理取出3’端的后50个base， 然后将结果依然保存为fastq的方法是：</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">awk</span> <span class="s1">'{if(NR%4==2||NR%4==0) {print substr($0,length($0)-5 + 1)}  }'</span> test.fq
+</code></pre></div></div>
+
+<p>6) 假如说，我们现在有一个sRNAs的数据，拿到之后呢第一步就是去接头。取几行序列出来，用clustwl之类的工具，就能很轻易地找到sRNAs的adapter序列。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>clustal sRNAs.fa
+</code></pre></div></div>
+<p>7) 去掉接头序列后，就应该去掉含有测序的ambiguous碱基，通常用N表示。也就是说，如果序列中含有N碱基，这条reads就应该被抛弃。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="s1">'N;s/\n/\t/'</span> sRNAs.fa | <span class="nb">sed</span> <span class="nt">-e</span> <span class="s1">'/\t.*N/d'</span> | <span class="nb">tr</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<ul>
+  <li>稍微地解释一下这段代码，fasta是以两行为单位，一行header，一行sequence, 所以我们先用sed将两行变一行，换行符变为\t分隔符; 然后将序列中含有N的reads给删掉,注意此时header中有N字符是可以容许的，然后末了再用tr将\t分隔符又又换换行符输出。</li>
+</ul>
+
+<p>7) 去掉“N”这种ambiguous碱基之后，我们有必要做长度筛选，因为植物里面的sRNAs一般是18nt-30nt，而去掉adator之后，可能有些reads特别短了，还有些很长，可能是来自于structural RNAs的降解产物，所以应该去除这些过长或者过短的，只保留18-30的reads进行分析。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sed</span> <span class="s1">'N;s/\n/\t/'</span> test.fa | <span class="nb">awk</span> <span class="s1">'BEGIN{OFS="\t";} {if (length($2)&gt;=18&amp;&amp;length($2)&lt;=30) {print $1,"\n",$2}}'</span> | <span class="nb">tr</span> <span class="nt">-d</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>8)  对于去掉接头，去掉“N”碱基，去掉过短或者过长的sRNAs序列之后，我们下一步就该看看sRNAs有那些特征了，比如一个比较重要的特征就是5’端的碱基频率，因为不同的5’端碱基，决定了sRNAs可能与那种AGO蛋白相结合，然后发挥生理作用。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat </span>test.fa | <span class="nb">grep</span> <span class="nt">-v</span> <span class="s2">"&gt;"</span> |cut <span class="nt">-c</span> 1-1 | <span class="nb">sort</span>| <span class="nb">uniq</span> <span class="nt">-c</span>| <span class="nb">awk</span> <span class="s1">'{print $2,$1}'</span> | <span class="nb">tr</span> <span class="s2">" "</span> <span class="s2">"</span><span class="se">\t</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>9) 对于去完接头的sRNAs序列文件，虽然还没有进行去掉结构RNA等步骤，但这时候的你，已经迫不及待地看看sRNAs的长度分布了。怎么办呢。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat </span>sRNAs.fa | <span class="nb">awk</span> <span class="s1">'NR%2==0'</span> | <span class="nb">awk</span> <span class="s1">'{print length($0)}'</span>|sort |uniq <span class="nt">-c</span>|sed <span class="s1">'s/^[][ ]*//g'</span>|awk <span class="s1">'{print $2,$1}'</span>
+</code></pre></div></div>
+
+<p>10)  把一个文本倒过来输出，即最后一行变成第一行，倒数第二行变成第二行。</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">seq </span>9 | <span class="nb">awk</span> <span class="s1">'{ lifo[NR]=$0 }END{ for(lno=NR;lno &gt; 0;lno--){print lifo[lno];}}'</span>
+<span class="nb">seq </span>9 | <span class="nb">tac</span> 
+</code></pre></div></div>
+
+<p>为了方便使用电脑的读者，本文也同步发表在知乎专栏。有兴趣的可以移步知乎。</p>
+
+<p><a href="https://zhuanlan.zhihu.com/pybio">知乎链接</a>：  https://zhuanlan.zhihu.com/pybio</p>
+
+
+  </section>
+</article>
+
+<section class="read-more">
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">最近的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2018/09/phd-theses-acknowledgement/" title="link to 博士论文致谢">博士论文致谢</a></h2>
+       <p class="excerpt">致谢部分回首读博的这几年，想要感谢的人也很多，内心对他们的感激，恐怕我的笨笔都不能写出百分之一。感谢研一的时候做湿实验的经历。在当时杨贞标老师组轮转，接受了关跃峰老师的直接指导，以及张莹师姐带着做实验的经历。这段时间认识了王水老师，贾蓓师姐，葛光军师兄，他们无论从实际实验操作技能，还是从举手投足表现出的科研素养，人文关怀，都深深地影响了自己。还有杨组的很多人，不能一一致谢，内心非常感激。感谢后来到了生物信息学平台的经历。在轮转之后，选择生物信息组，遇到了恩师刘仁义老师。当时，刚刚转到生物信...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2018-09-01 14:32:24 +0800" class="post-list__meta--date date">2018-09-01</time> &#8226; <span class="post-list__meta--tags tags">人间四月天</span><a class="btn-border-small" href=/2018/09/phd-theses-acknowledgement/>继续阅读</a></div>
+   </div>
+   
+   
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2016/12/linux-shell-trick-for-bioinformatics-2/" title="link to Shell tricks for bioinformatics 2">Shell tricks for bioinformatics 2</a></h2>
+       <p class="excerpt">上一次写了一个《Linux tricks for bioinformatics系列文章之一》，有读者从后台给我留言指出了一些欠缺的地方，非常感谢这些认真的读者。如果读者想熟悉这些命令，建议将命令手动操作一遍，从管道符的左边到右边依次输入，观察输出，细细体会每一个操作的作用。只有灵活运用这些招式，才能打出一套漂亮的组合拳。1) 将fastq格式文件转化为fasta序列文件。在上个礼拜我提供了一种解法，但是后来有小伙伴在后台私信我，在使用的过程当中遇到了一些问题。因为fasta文件的质量行，也...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2016-12-25 14:32:24 +0800" class="post-list__meta--date date">2016-12-25</time> &#8226; <span class="post-list__meta--tags tags">shell trick bioinformatics</span><a class="btn-border-small" href=/2016/12/linux-shell-trick-for-bioinformatics-2/>继续阅读</a></div>
+   </div>
+   
+</section>
+
+<section class="post-comments">
+  
+    <div id="disqus_thread"></div>
+    <script>
+    
+    var disqus_config = function () {
+        this.page.url = "http://localhost:4000/2016/12/linux-shell-trick-for-bioinformatics-3/";
+        this.page.identifier = "/2016/12/linux-shell-trick-for-bioinformatics-3/";
+    };
+
+    var disqus_shortname = 'vno-jekyll';
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+    
+  
+  
+  
+  
+</section>
+
+
+            <section class="footer">
+    <footer>
+    	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
+        <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 2018-09-02 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
+        <span class="footer__copyright">本站由 <a href="http://onev.cat">@onevcat</a> 创建，采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; 2018</span>
+    </footer>
+</section>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+  </body>
+
+</html>
